@@ -4,7 +4,7 @@ const program = require('commander')
 const path = require('path')
 const fs = require('fs')
 const glob = require('glob') // npm i glob -D
-
+const download = require('../lib/download')
 program.usage('<project-name>').parse(process.argv)
 
 // 根据输入，获取项目名称
@@ -44,4 +44,7 @@ go()
 function go () {
   // 预留，处理子命令  
   console.log('输出了最终路径', path.resolve(process.cwd(), path.join('.', rootName)))
+  download(rootName)
+    .then(target => console.log(target))
+    .catch(error => console.log(error))
 }
