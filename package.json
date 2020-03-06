@@ -1,0 +1,35 @@
+{
+  "name": "custom-init",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "custom": "./bin/custom.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.1.1",
+    "download-git-repo": "^3.0.2",
+    "glob": "^7.1.6",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "hello": "node ./bin/custom.js hello",
+    "init": "node ./bin/custom.js init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HXCStudio123/custom-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HXCStudio123/custom-cli/issues"
+  },
+  "homepage": "https://github.com/HXCStudio123/custom-cli#readme"
+}
