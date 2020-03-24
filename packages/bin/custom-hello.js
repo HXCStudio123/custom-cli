@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 console.log('hello, commander,我正在测试脚手架的开发')
 const inquirer = require('inquirer') // 命令行交互插件
 

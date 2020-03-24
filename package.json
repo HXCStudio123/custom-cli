@@ -1,14 +1,19 @@
 {
   "name": "custom-init",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.7",
+  "description": "一个用来测试发布的包",
   "main": "index.js",
   "bin": {
-    "custom": "./bin/custom.js"
+    "cus": "packages/bin/custom.js",
+    "cus-hello": "packages/bin/custom-hello.js",
+    "cus-init": "packages/bin/custom-init.js"
   },
   "directories": {
     "lib": "lib"
   },
+  "files": [
+    "packages"
+  ],
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.1.1",
@@ -24,8 +29,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "hello": "node ./bin/custom.js hello",
-    "init": "node ./bin/custom.js init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,5 +40,6 @@
   "bugs": {
     "url": "https://github.com/HXCStudio123/custom-cli/issues"
   },
-  "homepage": "https://github.com/HXCStudio123/custom-cli#readme"
+  "homepage": "https://github.com/HXCStudio123/custom-cli#readme",
+  "keywords": ["cli"]
 }
